@@ -241,47 +241,60 @@ body {
     .p6{ right:-15px; bottom:160px; }
 } */
 @media (max-width: 768px) {
- .photo{
-        width:115px;
+
+    .photo{
+        width:140px;
+        animation: floatPhoto 4s ease-in-out infinite;
     }
 
+    /* Arriba */
     .p1{
-        left:10px;
-        bottom:520px;
-        transform:rotate(-8deg);
-    }
-
-    .p2{
-        left:25px;
-        bottom:330px;
-        transform:rotate(8deg);
-    }
-
-    .p3{
         left:5px;
-        bottom:150px;
-        transform:rotate(-5deg);
+        bottom:620px;
+        transform:rotate(-8deg);
     }
 
     .p4{
-        right:10px;
-        bottom:520px;
+        right:5px;
+        bottom:620px;
         transform:rotate(8deg);
     }
 
-    .p5{
-        right:25px;
-        bottom:330px;
+    /* Centro */
+    .p2{
+        left:-20px;
+        bottom:420px;
         transform:rotate(-8deg);
     }
 
+    .p5{
+        right:-40px;
+        bottom:390px;
+        transform:rotate(6deg);
+    }
+
+    /* Abajo */
+    .p3{
+        left:10px;
+        bottom:190px;
+        transform:rotate(-5deg);
+    }
+
     .p6{
-        right:5px;
-        bottom:150px;
+        right:10px;
+        bottom:190px;
         transform:rotate(5deg);
     }
-  }
 
+@keyframes floatPhoto{
+    0%,100%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-10px);
+    }
+}
+}
 .flower--1,
 .flower--2,
 .flower--3{
