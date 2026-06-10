@@ -14,7 +14,11 @@
 <audio id="music" loop>
     <source src="assets/KevinKaarl.mp3" type="audio/mpeg">
 </audio>
+
     <div class="night"></div>
+          <button id="playMusicBtn" class="music-btn">
+          🎵 Reproducir nuestra canción
+      </button>
     <div class="flowers">
 
       <img src="img/salida1.jpeg" class="photo p1">
@@ -363,8 +367,22 @@
   <audio id="music" loop>
     <source src="assest/KevinKaarl.mp3" type="audio/mpeg">
 </audio>
-
 <script>
+const music = document.getElementById("music");
+const btn = document.getElementById("playMusicBtn");
+
+btn.addEventListener("click", () => {
+    music.play();
+
+    btn.innerHTML = "💛 Disfruta la música";
+    btn.disabled = true;
+
+    // setTimeout(() => {
+    //     btn.style.opacity = "0";
+    // }, 2000);
+});
+</script>
+<!-- <script>
 window.addEventListener("load", () => {
     const music = document.getElementById("music");
 
@@ -372,5 +390,5 @@ window.addEventListener("load", () => {
         music.play().catch(err => console.log(err));
     }
 });
-</script>
+</script> -->
 </html>
