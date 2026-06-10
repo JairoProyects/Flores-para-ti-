@@ -56,6 +56,56 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+
+    .photo {
+        width: 140px;
+        position: absolute; /* Asegura que responda a bottom/left/right y z-index */
+        z-index: 10;        /* Esto las empuja hacia el frente/arriba */
+        animation: floatPhoto 4s ease-in-out infinite;
+    }
+
+    /* Arriba */
+    .p1 {
+        left: 5px;
+        bottom: 920px;
+        /* Combinamos el rotate con la animación para que no se rompa en iPhone */
+        transform: rotate(-8deg); 
+    }
+
+    .p4 {
+        right: 5px;
+        bottom: 620px;
+        transform: rotate(8deg);
+    }
+
+    /* Centro */
+    .p2 {
+        left: -20px;
+        bottom: 420px;
+        transform: rotate(-8deg);
+    }
+
+    .p5 {
+        right: -40px;
+        bottom: 390px;
+        transform: rotate(6deg);
+    }
+
+    /* Abajo */
+    .p3 {
+        left: 10px;
+        bottom: 190px;
+        transform: rotate(-5deg);
+    }
+
+    .p6 {
+        right: 10px;
+        bottom: 190px;
+        transform: rotate(5deg);
+    }
+}
+
 @media(max-width:768px){
 
     .title{
@@ -148,6 +198,19 @@ body {
 .flower--5{
     z-index:2;
 }
+
+
+/* Nota sobre la animación en iPhone (Safari) */
+@keyframes floatPhoto {
+    0%, 100% {
+        /* Mantenemos el translate, pero ojo con los conflictos de transform individuales */
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 
 .photo{
     position:absolute;
