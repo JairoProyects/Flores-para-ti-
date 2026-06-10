@@ -61,7 +61,58 @@ body {
     ),
     linear-gradient(90deg, rgb(255, 242, 0), rgb(240, 240, 240));
 }
+@media (max-width: 768px) {
 
+    .photo {
+        width: 115px;      /* Tamaño óptimo para pantallas de iPhone */
+        z-index: 999;      /* Forzamos que se queden ARRIBA de todas las flores */
+        position: absolute;
+    }
+
+    /* --- FOTOS LADO IZQUIERDO --- */
+    /* Foto Superior Izquierda */
+    .p1 {
+        left: 10px;
+        bottom: 68vh;      /* Usamos vh (alto de pantalla) para evitar saltos */
+        transform: rotate(-8deg) !important;
+    }
+
+    /* Foto Central Izquierda */
+    .p2 {
+        left: 5px;
+        bottom: 43vh;
+        transform: rotate(6deg) !important;
+    }
+
+    /* Foto Inferior Izquierda */
+    .p3 {
+        left: 12px;
+        bottom: 18vh;
+        transform: rotate(-5deg) !important;
+    }
+
+    /* --- FOTOS LADO DERECHO --- */
+    /* Foto Superior Derecha */
+    .p4 {
+        right: 10px;
+        bottom: 68vh;
+        transform: rotate(8deg) !important;
+    }
+
+    /* Foto Central Derecha */
+    .p5 {
+        right: 5px;
+        bottom: 43vh;
+        transform: rotate(-6deg) !important;
+    }
+
+    /* Foto Inferior Derecha */
+    .p6 {
+        right: 12px;
+        bottom: 18vh;
+        transform: rotate(5deg) !important;
+    }
+}
 .flowers {
   position: relative;
   transform: scale(0.9);

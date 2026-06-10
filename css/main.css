@@ -59,53 +59,56 @@ body {
 @media (max-width: 768px) {
 
     .photo {
-        width: 140px;
-        position: absolute; /* Asegura que responda a bottom/left/right y z-index */
-        z-index: 10;        /* Esto las empuja hacia el frente/arriba */
-        animation: floatPhoto 4s ease-in-out infinite;
+        width: 115px;      /* Tamaño óptimo para pantallas de iPhone */
+        z-index: 999;      /* Forzamos que se queden ARRIBA de todas las flores */
+        position: absolute;
     }
 
-    /* Arriba */
+    /* --- FOTOS LADO IZQUIERDO --- */
+    /* Foto Superior Izquierda */
     .p1 {
-        left: 5px;
-        bottom: 920px;
-        /* Combinamos el rotate con la animación para que no se rompa en iPhone */
-        transform: rotate(-8deg); 
-    }
-
-    .p4 {
-        right: 5px;
-        bottom: 620px;
-        transform: rotate(8deg);
-    }
-
-    /* Centro */
-    .p2 {
-        left: -20px;
-        bottom: 420px;
-        transform: rotate(-8deg);
-    }
-
-    .p5 {
-        right: -40px;
-        bottom: 390px;
-        transform: rotate(6deg);
-    }
-
-    /* Abajo */
-    .p3 {
         left: 10px;
-        bottom: 190px;
-        transform: rotate(-5deg);
+        bottom: 68vh;      /* Usamos vh (alto de pantalla) para evitar saltos */
+        transform: rotate(-8deg) !important;
     }
 
-    .p6 {
+    /* Foto Central Izquierda */
+    .p2 {
+        left: 5px;
+        bottom: 43vh;
+        transform: rotate(6deg) !important;
+    }
+
+    /* Foto Inferior Izquierda */
+    .p3 {
+        left: 12px;
+        bottom: 18vh;
+        transform: rotate(-5deg) !important;
+    }
+
+    /* --- FOTOS LADO DERECHO --- */
+    /* Foto Superior Derecha */
+    .p4 {
         right: 10px;
-        bottom: 190px;
-        transform: rotate(5deg);
+        bottom: 68vh;
+        transform: rotate(8deg) !important;
+    }
+
+    /* Foto Central Derecha */
+    .p5 {
+        right: 5px;
+        bottom: 43vh;
+        transform: rotate(-6deg) !important;
+    }
+
+    /* Foto Inferior Derecha */
+    .p6 {
+        right: 12px;
+        bottom: 18vh;
+        transform: rotate(5deg) !important;
     }
 }
-
+  
 @media(max-width:768px){
 
     .title{
