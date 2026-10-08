@@ -290,8 +290,11 @@ body {
 
   /* Foto Inferior Izquierda (Abajo) */
   .p3 { 
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
       left: 15px;        /* Más adentro para esquivar la base de la flor */
-      bottom: 40vh;      /* Misma altura que la p6 */
+      bottom: 45vh;      /* Misma altura que la p6 */
       transform: rotate(-5deg) !important; 
   }
 
@@ -313,7 +316,7 @@ body {
 
   /* Foto Inferior Derecha (Abajo) */
   .p6 { 
-      right: 15px;       
+      right: 10px;       
       bottom: 50vh;      
       transform: rotate(5deg) !important; 
  }  
