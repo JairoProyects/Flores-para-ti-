@@ -275,50 +275,84 @@ body {
     .p5{ left:-50px; bottom:630px; opacity: 0; }
     .p6{ left:-15px; bottom:360px; opacity: 0; } */
 
-        .p1 { 
+     .p1 { 
         left: 10px;        /* 10px adentro desde el borde izquierdo */
         bottom: 80vh;      /* Misma altura que la p4 */
         transform: rotate(-8deg) !important; 
     }
 
-    /* Foto Central Izquierda (Medio) */
-    .p2 { 
-        left: 5px;         /* Un poco más salida para dar dinamismo */
-        bottom: 60vh;      /* Misma altura que la p5 */
-        transform: rotate(6deg) !important; 
-    }
+  /* Foto Central Izquierda (Medio) */
+  .p2 { 
+      left: 5px;         /* Un poco más salida para dar dinamismo */
+      bottom: 60vh;      /* Misma altura que la p5 */
+      transform: rotate(6deg) !important; 
+  }
 
-    /* Foto Inferior Izquierda (Abajo) */
-    .p3 { 
-        left: 15px;        /* Más adentro para esquivar la base de la flor */
-        bottom: 45vh;      /* Misma altura que la p6 */
-        transform: rotate(-5deg) !important; 
-    }
+  /* Foto Inferior Izquierda (Abajo) */
+  .p3 { 
+      left: 15px;        /* Más adentro para esquivar la base de la flor */
+      bottom: 40vh;      /* Misma altura que la p6 */
+      transform: rotate(-5deg) !important; 
+  }
 
-    /* --- FOTOS LADO DERECHO (YA COMPROBADAS) --- */
+  /* --- FOTOS LADO DERECHO (YA COMPROBADAS) --- */
 
-    /* Foto Superior Derecha (Arriba) */
-    .p4 { 
-        right: 10px;        
-        bottom: 80vh;      
-        transform: rotate(8deg) !important; 
-    }
+  /* Foto Superior Derecha (Arriba) */
+  .p4 { 
+      right: 10px;        
+      bottom: 80vh;      
+      transform: rotate(8deg) !important; 
+  }
 
-    /* Foto Central Derecha (Medio) */
-    .p5 { 
-        right: 5px;        
-        bottom: 65vh;      
-        transform: rotate(-6deg) !important; 
-    }
+  /* Foto Central Derecha (Medio) */
+  .p5 { 
+      right: 5px;        
+      bottom: 65vh;      
+      transform: rotate(-6deg) !important; 
+  }
 
-    /* Foto Inferior Derecha (Abajo) */
-    .p6 { 
-        right: 15px;       
-        bottom: 50vh;      
-        transform: rotate(5deg) !important; 
-    }
+  /* Foto Inferior Derecha (Abajo) */
+  .p6 { 
+      right: 15px;       
+      bottom: 50vh;      
+      transform: rotate(5deg) !important; 
+ }  
+
+
 }
 
+@media (max-width: 768px) {
+
+    .message {
+        width: 145px;
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .message-left {
+        left: 3%;
+    }
+
+    .message-right {
+        right: 3%;
+    }
+
+    .message-1 {
+        top: 30%;
+    }
+
+    .message-2 {
+        top: 40%;
+    }
+
+    .message-3 {
+        top: 50%;
+    }
+
+    .message-4 {
+        top: 60%;
+    }
+}
 .flower--1,
 .flower--2,
 .flower--3{
